@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #c76aa8;
+  color: #111;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+
+.navbar {
+  width: 100%;
+  padding: 1.5rem 5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.2rem;
+  letter-spacing: 0.4rem;
+  font-weight: 600;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: white;
+
+  transition: 0.3s ease;
+}
+
+.nav-links li:hover {
+  opacity: 0.7;
+}
+
+/* HERO */
+
+.hero {
+  height: 100vh;
+  width: 100%;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+     to right,
+     rgba(0,0,0,0.88),
+     rgba(159, 29, 53, 0.55)
+    ),
+  url('https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1400&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-tag {
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  color: #f3f3f3;
+}
+
+.hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 8rem;
+  font-weight: 600;
+
+  line-height: 0.9;
+  letter-spacing: 0.3rem;
+
+  color: white;
+}
+
+.hero-subtitle {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #f3f3f3;
+}
+
+.hero-buttons {
+  margin-top: 2rem;
+
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+
+  transition: 0.3s ease;
+}
+
+.primary-btn {
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+
+  color: white;
+
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.primary-btn:hover {
+  background: rgba(120, 120, 120, 0.55);
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.secondary-btn:hover {
+  background: white;
+  color: black;
+}
+
+/* ABOUT SECTION */
+
+.about-section {
+  padding: 8rem 8%;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+
+  background: #c76aa8
+;
+}
+
+.about-left {
+  flex: 1;
+}
+
+.about-tag {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+
+  font-size: 0.8rem;
+  color: #555;
+
+  margin-bottom: 1.5rem;
+}
+
+.about-left h2 {
+  font-size: 4.5rem;
+  line-height: 1;
+
+  font-family: 'Cormorant Garamond', serif;
+
+  color: #111;
+}
+
+.about-right {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  justify-content: center;
+}
+
+.about-right p {
+  font-size: 1.05rem;
+  line-height: 1.9;
+
+  color: #333;
+
+  max-width: 550px;
+}
+
+/* FEATURED MODELS */
+
+.featured-models {
+  padding: 8rem 8%;
+  background: #c76aa8
+;
+}
+
+.section-header {
+  margin-bottom: 4rem;
+}
+
+.section-header p {
+  color: #444;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+}
+
+.section-header h2 {
+  font-size: 4rem;
+  font-family: 'Cormorant Garamond', serif;
+  color: #111;
+}
+
+/* GRID */
+
+.models-grid {
+  display: flex;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.model-card {
+  flex: 1;
+
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* IMAGE */
+
+.model-card img {
+  width: 100%;
+  height: 420px;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.model-card:hover img {
+  transform: scale(1.03);
+}
+
+/* INFO */
+
+.model-info {
+  margin-top: 1rem;
+}
+
+.model-info h3 {
+  font-size: 1.6rem;
+  font-family: 'Cormorant Garamond', serif;
+  color: #111;
+}
+
+.model-info span {
+  color: #555;
+}
+
+/* QUOTE SECTION */
+
+.quote-section {
+  padding: 10rem 10%;
+  text-align: center;
+
+  background: white;
+  color: black;
+}
+
+.quote-section p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4rem;
+  line-height: 1.3;
+
+  max-width: 850px;
+  margin: auto;
+
+  margin-bottom: 2rem;
+}
+
+.quote-section span {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* COLLECTIONS */
+
+.collections {
+  padding: 8rem 10%;
+  background: #c76aa8
+;
+}
+
+.collections-header {
+  margin-bottom: 4rem;
+}
+
+.collections-header p {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.collections-header h2 {
+  font-size: 4rem;
+  font-family: 'Cormorant Garamond', serif;
+  color: #111;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.collection-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.collection-card img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+
+  transition: transform 0.6s ease;
+}
+
+.collection-card:hover img {
+  transform: scale(1.05);
+}
+
+.collection-info {
+  margin-top: 1rem;
+}
+
+.collection-info h3 {
+  font-size: 1.5rem;
+  font-family: 'Cormorant Garamond', serif;
+  color: #111;
+}
+
+.collection-info p {
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 7rem 8% 3rem;
+
+  background: #c76aa8
+;
+
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+/* TOP */
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 6rem;
+
+  margin-bottom: 5rem;
+}
+
+/* BRAND */
+
+.footer-brand h2 {
+  font-size: 3rem;
+  font-family: 'Cormorant Garamond', serif;
+
+  margin-bottom: 1rem;
+
+  color: #111;
+}
+
+.footer-brand p {
+  max-width: 400px;
+
+  color: #444;
+  line-height: 1.8;
+}
+
+/* LINKS */
+
+.footer-links {
+  display: flex;
+  gap: 5rem;
+}
+
+.footer-links h4 {
+  margin-bottom: 1.5rem;
+
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+
+  color: #111;
+}
+
+.footer-links p {
+  margin-bottom: 0.8rem;
+
+  color: #555;
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.footer-links p:hover {
+  color: black;
+}
+
+/* BOTTOM */
+
+.footer-bottom {
+  padding-top: 2rem;
+
+  border-top: 1px solid rgba(0,0,0,0.08);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p,
+.footer-bottom span {
+  color: #666;
+  font-size: 0.9rem;
+}
