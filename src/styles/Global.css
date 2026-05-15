@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #c76aa8;
+  background: #e04242;
   color: #111;
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
@@ -68,13 +68,15 @@ body {
 
   background:
     linear-gradient(
-     to right,
-     rgba(0,0,0,0.88),
-     rgba(159, 29, 53, 0.55)
+      to right,
+      rgba(0,0,0,0.55),
+      rgba(159, 29, 53, 0.35)
     ),
-  url('https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1400&auto=format&fit=crop');
+    url('../assets/wmh-cover.png');
+
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-content {
@@ -161,7 +163,7 @@ body {
   justify-content: space-between;
   gap: 5rem;
 
-  background: #c76aa8
+  background: #e04242
 ;
 }
 
@@ -211,7 +213,7 @@ body {
 
 .featured-models {
   padding: 8rem 8%;
-  background: #c76aa8
+  background: #e04242
 ;
 }
 
@@ -313,7 +315,7 @@ body {
 
 .collections {
   padding: 8rem 10%;
-  background: #c76aa8
+  background: #e04242
 ;
 }
 
@@ -378,7 +380,7 @@ body {
 .footer {
   padding: 7rem 8% 3rem;
 
-  background: #c76aa8
+  background: #e04242
 ;
 
   border-top: 1px solid rgba(0,0,0,0.08);
