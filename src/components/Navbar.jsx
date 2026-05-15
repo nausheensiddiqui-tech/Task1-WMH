@@ -1,14 +1,25 @@
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="logo">WORLD MODEL HUNT</div>
+      <div className="logo">
+        WORLD MODEL HUNT
+      </div>
 
       <ul className="nav-links">
-        <li>Collections</li>
-        <li>About</li>
-        <li>Journal</li>
+        <li>Home</li>
+        <li>Print</li>
+        <li>Digital</li>
+        <li>Blog</li>
+        <li>Editorials</li>
+        <li>Models</li>
+        <li>Agencies</li>
+        <li>Campaigns</li>
+        <li>About Us</li>
         <li>Contact</li>
-        {/* <li><Login>Login-Signup</Login></li> */}
+
+        <button className="submission-btn">
+          Submission
+        </button>
       </ul>
     </nav>
   );

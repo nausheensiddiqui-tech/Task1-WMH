@@ -1,7 +1,6 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import FeaturedModels from "./components/FeaturedModels";
-import QuoteSection from "./components/QuoteSection";
 import Collections from "./components/Collections";
 import Footer from "./components/Footer";
 import About from "./components/About";
@@ -18,7 +17,6 @@ function App() {
       <Hero />
       <About />
       <FeaturedModels />
-      <QuoteSection />
       <Collections />
       <Footer />
     </>
