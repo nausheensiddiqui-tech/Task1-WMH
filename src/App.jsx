@@ -4,6 +4,7 @@ import FeaturedModels from "./components/FeaturedModels";
 import Collections from "./components/Collections";
 import Footer from "./components/Footer";
 import About from "./components/About";
+import FashionNews from "./components/FashionNews";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <FashionNews />
       <FeaturedModels />
       <Collections />
       <Footer />

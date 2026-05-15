@@ -7,6 +7,7 @@ const Navbar = () => {
 
       <ul className="nav-links">
         <li>Home</li>
+        <li>About Us</li>
         <li>Print</li>
         <li>Digital</li>
         <li>Blog</li>
@@ -14,7 +15,6 @@ const Navbar = () => {
         <li>Models</li>
         <li>Agencies</li>
         <li>Campaigns</li>
-        <li>About Us</li>
         <li>Contact</li>
 
         <button className="submission-btn">
