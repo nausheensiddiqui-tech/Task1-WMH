@@ -4,8 +4,22 @@ const Hero = () => {
       <div className="overlay"></div>
 
       <div className="hero-content">
-        {/* Optional buttons can go here later */}
-      </div>
+
+  <div className="hero-text">
+
+    <h1>
+      <span className="white-text">WORLD</span>
+      <span className="white-text">MODEL</span>
+      <span className="red-text">HUNT</span>
+    </h1>
+
+    <p className="hero-subtitle">
+      Everybody wants this...
+    </p>
+
+  </div>
+
+</div>
     </section>
   );
 };
